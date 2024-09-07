@@ -11,7 +11,7 @@ export const Home = () => {
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> {meta.title}</title>
+          <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
@@ -40,7 +40,7 @@ export const Home = () => {
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
+                    <div id="button_p" className="ac_btn btn">
                       My Portfolio
                       <div className="ring one"></div>
                       <div className="ring two"></div>
@@ -55,6 +55,19 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  {/* New Resume Button */}
+                  <a
+                    href="https://drive.google.com/file/d/1BiNXw4MwWithh0TpHXsQNQEOjlpqkgk4/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="button_resume"
+                    className="ac_btn btn"
+                  >
+                    Resume
+                    <div className="ring one"></div>
+                    <div className="ring two"></div>
+                    <div className="ring three"></div>
+                  </a>
                 </div>
               </div>
             </div>

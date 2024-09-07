@@ -7,10 +7,11 @@ import {
   FaLinkedin,
   FaYoutube,
   FaTwitch,
+  FaCode, // Import FaCode for LeetCode
 } from "react-icons/fa";
 import { socialprofils } from "../../content_option";
 
-export const Socialicons = (params) => {
+export const Socialicons = () => {
   return (
     <div className="stick_follow_icon">
       <ul>
@@ -53,6 +54,13 @@ export const Socialicons = (params) => {
           <li>
             <a href={socialprofils.twitch}>
               <FaTwitch />
+            </a>
+          </li>
+        )}
+        {socialprofils.leetcode && (
+          <li>
+            <a href={socialprofils.leetcode}>
+              <FaCode /> {/* LeetCode icon */}
             </a>
           </li>
         )}
