@@ -74,3 +74,8 @@
 .po_item:hover .content {
     opacity: 1;
 }
+/* Add this to your style.css if needed */
+.modal-footer .btn-primary {
+    margin-left: 10px; /* Space between buttons */
+  }
+  
